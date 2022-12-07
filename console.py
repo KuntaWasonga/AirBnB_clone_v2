@@ -121,7 +121,6 @@ class HBNBCommand(cmd.Cmd):
             if not line:
                 raise SyntaxError()
             my_list = line.split(" ")
-
             kwargs = {}
             for i in range(1, len(my_list)):
                 key, value = tuple(my_list[i].split("="))
